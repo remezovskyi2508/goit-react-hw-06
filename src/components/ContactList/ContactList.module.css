@@ -1,3 +1,6 @@
+.listItem{
+  list-style-type: none;
+}
 .wrapper {
   display: flex;
   flex-wrap: wrap;
