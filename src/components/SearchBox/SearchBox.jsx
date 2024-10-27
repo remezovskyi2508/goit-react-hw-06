@@ -4,9 +4,9 @@ import { useId } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { changeFilter, selectNameFilter } from '../../redux/filtersSlice';
 
-export default function SearchBox({ searchValue, setSearchValue }) {
+export default function SearchBox() {
   const searchInputId = useId();
-  const filter = useSelector(selectNameFilter)
+  const filter = useSelector(selectNameFilter);
   const dispatch = useDispatch();
   return (
     <div className={css.wrapper}>
